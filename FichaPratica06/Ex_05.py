@@ -1,12 +1,16 @@
-numeros=[]
+#o programa para com um numero negativo
 
+numeros = []
+num = 1
+soma = 0
 
-for i in range():
-    num = int(input(f"Insira os números [{i}]: "))
-    numeros.append(num)
+while (num >= 0):
+    num=int(input("Insira um numero (negativo para parar): "))
+    if (num > 0):
+        numeros.append(num)
 
+for i in range(0, len(numeros)): # se usar: (for i in numeros:) é a mesma coisa
+    soma += numeros[i]  # se usar (soma += i) é a mesma coisa dessa linha
 
-
-print(numeros)
-
-
+media = soma/len(numeros)
+print("Media: ", media)

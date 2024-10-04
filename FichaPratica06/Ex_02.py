@@ -1,17 +1,21 @@
 comissoes=[]
-
+total = 0
 #utilizador deve inserir 10 números
 
 for i in range(0,12):
-    num = float(input(f"Insira os números [{i}]: "))
+    num = float(input(f"Insira na lista de comissões [{i}]: "))
     comissoes.append(num)
 
-print(comissoes)
+#calcular total
 
-comissaoTotal = sum(comissoes)
+for i in range(0,12):
+    total += comissoes[i]
+print("Total", total)
 
-print(comissaoTotal)
+
+#modo resumido
+#comissaoTotal = sum(comissoes)
 
 
-#print(f"numeros[{i}]: {numeros[i]}")
+
 
